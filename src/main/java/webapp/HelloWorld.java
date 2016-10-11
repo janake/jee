@@ -13,7 +13,8 @@ public class HelloWorld extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.getWriter().append("csako vilag!!!");
+		String param = req.getParameter("param");
+		resp.getWriter().append("csako " + param + "!!!");
 	}
 
 	
